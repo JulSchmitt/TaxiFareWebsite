@@ -66,9 +66,6 @@ h1 {
     color: purple;
 }
 
-markdown {
-    color: pink;
-}
 """
 if st.checkbox('Inject CSS'):
     st.write(f'<style>{CSS}</style>', unsafe_allow_html=True)
@@ -92,6 +89,18 @@ else:
     from PIL import Image
     image = Image.open('images/map.png')
     st.image(image, caption='map', use_column_width=False)
+
+
+
+params=
+{
+  "pickup_datetime": "2013-07-06 17:18:00 UTC",
+  "pickup_longitude": "-73.950655",
+  "pickup_latitude": "40.783282",
+  "dropoff_longitude": "-73.984365",
+  "dropoff_latitude": "40.769802",
+  "passenger_count": "1"
+}
 
 
 '''
